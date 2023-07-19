@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js" integrity="sha512-Q+G390ZU2qKo+e4q+kVcJknwfGjKJOdyu5mVMcR95NqL6XaF4lY4nsSvIVB3NDP54ACsS9rqhE1DVqgpApl//Q==" crossorigin="anonymous"></script>
+
+
+    <link href='https://fonts.googleapis.com/css?family=Varela Round' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="mystyles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>    
+
+<body>
+
+    <div class="above_the_fold_" >
+
+        
+    <div class="responsive-container-block big-container">
+
+
+        <div class="responsive-menu" id="TO UP">
+
+            
+
+            <input id="toggle" type="checkbox">
+        
+            
+            <label class="toggle-container" for="toggle">
+                
+                <span class="button button-toggle"></span>
+                
+            </label>
+    
+            <nav class="nav ">
+                <a class="nav-item" href="" id="mode"> mode </a>
+                <a class="nav-item" onclick="enableprofile()"> Author </a>
+                <a class="nav-item" onclick="ToggleLogin()">Login</a>
+                <a class="nav-item" href="#to end" id="end"> To End </a>
+            </nav>
+    
+    
+        </div>
+
+    
+      
+        
+        <div class="responsive-container-block">
+
+            <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12 left" id="ParallaxContent" style="transform: translate3d(0px, 0px, 0px);">
+
+            <p class="text-blk section-head-text lettersglow1">
+                Hi, this is <span style="color:rgb(218, 233, 83)">KARTHIKEYAN</span>
+            </p>
+            <p class="text-blk section-subhead-text lettersglow2">
+                This is my Home Website.<br>
+                 Scroll down for More content <BR>  THANK YOU!!!
+            </p>
+            
+            
+            </div>
+            
+        </div>
+        
+        
+    </div>
+
+
+    <div class="responsive-container-block card-container">
+
+        
+        <div class="responsive-cell-block wk-desk-4 wk-ipadp-4 wk-tab-6 wk-mobile-12" >
+            <div class="card">
+                <img class="points-svg" src="" id="aboutme" >
+                <div class="card-content">
+                <div class="above_the_fold_ text-blk card-head">
+                    About Me
+                </div>
+                <div class="card-subhead">
+                    
+                    <li> Introduction</li>
+                    <li> Carrier</li>
+                      
+                </div>
+                </div>
+
+                
+                <button class="button-74" onclick="openabtme()" >GO</button>
+                
+
+            </div>
+        </div>
+
+        <div class="responsive-cell-block wk-desk-4 wk-ipadp-4 wk-tab-6 wk-mobile-12">
+            
+            <div class="card">
+                <img class="points-svg" src="" id="edu">
+                <div class="card-content">
+                <p class="text-blk card-head">
+                    Education
+                </p>
+                <div class="text-blk card-subhead">
+                    <li>Certifications</li>
+                    <li>Resume</li>
+                </div>
+                </div>
+                
+                <button class="button-74" >GO</button>
+                
+            </div>
+        </div>
+
+        <div class="responsive-cell-block wk-desk-4 wk-ipadp-4 wk-tab-6 wk-mobile-12">
+
+            <div class="card">
+
+                <img class= "points-svg"  id="icon" src="">
+
+                <div class="card-content">
+                <p class="text-blk card-head">
+                    Entertainment
+                </p>
+                <div class="text-blk card-subhead">
+                    <li>My PC</li>
+                    <li>Gaming</li>
+                </div>
+                </div>
+
+            
+                <button class="button-74" role="button">   GO  </button>
+                
+
+            </div>
+
+            
+
+        </div>
+
+        <div id="special1" class="responsive-cell-block wk-desk-4 wk-ipadp-4 wk-tab-6 wk-mobile-12 hidden">
+
+            <div class="specialcard">
+
+                <img class= "points-svg"  id="virus" src="">
+
+                <div class="card-content">
+                <p class="text-blk specialcard-head">
+                    VIRUS
+                </p>
+                <p class="text-blk card-subhead">
+                    <li>get infected => </li>
+                    <li> *&#$%*$ </li>
+                </p>
+                </div>
+
+            
+                <button class="button-74s" role="button" onclick="special1()">   GO  </button>
+                
+
+            </div>
+
+            
+
+        </div>
+
+        <div id="special2" class="responsive-cell-block wk-desk-4 wk-ipadp-4 wk-tab-6 wk-mobile-12 hidden">
+
+            <div class="specialcard">
+
+                <img class= "points-svg"  id="ds" src="">
+
+                <div class="card-content">
+                <p class="text-blk specialcard-head">
+                    ihaveNoIdea
+                </p>
+                <p class="text-blk specialcard-subhead">
+                    <li>nothing</li>
+                    <li>not anything</li>
+                </p>
+                </div>
+
+            
+                <button class="button-74s" role="button" onclick="special2()">   GO  </button>
+                
+
+            </div>
+
+            
+
+        </div>
+        
+
+
+    </div>
+    </div>
+
+
+
+    
+
+    
+    <div class="footer" id="to end">&copy; <span>  All rights reserved <a href="#TO UP"> To Up </a>  </div>
+
+    
+    <div class="profilecard hidden" id="profile">
+
+        <div class="ds-top"></div>
+
+        
+        <div class="avatar-holder">
+            <img src="" alt="karthikeyan" id="authorphoto">
+        </div>
+
+        <div class="name">
+            <a> KARTHIKEYAN J </a>
+            <h6> <i class="fa fa-instagram"></i> &nbsp; kar_thik_op </h6>
+        </div>
+
+        <div class="ds-info">
+
+            <div class="ds pens">
+            <h6 title="Number of pens created by the user"> Followers </h6>
+            <p>182</p>
+            </div>
+            <div class="ds projects">
+            <h6 title="Number of projects created by the user">Following </h6>
+            <p>261</p>
+            </div>
+            <div class="ds posts">
+            <h6 title="Number of posts">Posts </h6>
+            <p>0</p>
+            </div>
+        </div>
+
+        <div class="button">
+            <a href="https://www.instagram.com/kar_thik_op/" target ="_blank" class="btn" ><i class="fa fa-user-plus"></i> &nbsp; Follow </a>
+            <a href="#" class="btn" onmousedown="enableprofile();">Close &nbsp; <i class="fa fa-close"></i></a>
+        </div>
+
+    
+        <div class="ds-skill">
+
+            <h6>Skill <i class="fa fa-code" aria-hidden="true"></i></h6>
+
+            <div class="skill html">
+            <h6> Python </h6> 
+            <div class="bar bar-html">
+                <p>80%</p>
+            </div>
+            </div>
+
+            <div class="skill css">
+            <h6> C Programming </h6>
+            <div class="bar bar-css">
+                <p>70%</p>
+            </div>
+            </div>
+
+            <div class="skill javascript">
+            <h6><i class="fab fa-js"></i> Html + Css </h6>
+            <div class="bar bar-js">
+                <p>70%</p>
+            </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+
+
+    <div id="LoginForm" class="hidden">
+
+        <form>
+            <h3>Login Here</h3>
+    
+            <label for="username">Username</label>
+            <input type="text" placeholder="Username" id="username" name="username" required="" />
+    
+            <label for="password">Password</label>
+            <input type="password" placeholder="Password" name="password" id="password">
+    
+
+            <button class="button-56">Log In</button>
+
+        </form>
+
+
+    </div>
+
+
+    <div id = "clock" class="clockcontainer" ontouchstart="clocktapped()">
+        <h1 id="time" class='shadow blur'></h1>
+    </div>
+
+
+
+</body>    
+
+
+<script>
+
+    document.getElementById("clock").position;
+
+    function pressed() {
+        alert("button Clicked");
+    }
+
+    var imagePath = "C:\\Users\\Karthikeyan\\Desktop\\RandOm FILes\\html works\\myimages\\";
+
+    document.getElementById("icon").src =  imagePath + 'ps color.png';
+    document.getElementById("aboutme").src = imagePath +'document color.png';
+    document.getElementById("authorphoto").src = imagePath + 'author.jpg';
+    document.getElementById("edu").src=imagePath+"certificate color.png";
+    document.getElementById("virus").src=imagePath+"virus.png";
+    document.getElementById("ds").src=imagePath+"ds.png";
+
+
+    function enableprofile() {
+
+        var form = document.getElementById("profile");
+        form.classList.toggle("hidden");
+        document.body.classList.add("blur");
+        
+        
+
+    };
+    const form = document.querySelector('#LoginForm');
+    function ToggleLogin() {
+        
+        form.classList.remove("hidden");
+        document.body.addEventListener('mousedown', (event) => {
+            
+            if (!form.contains(event.target)) {
+              
+              form.classList.add("hidden"); 
+            }
+          });
+    
+
+    };
+
+    document.getElementById("LoginForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        
+        var usernameInput = document.getElementById("username");
+        var passwordInput = document.getElementById("password");
+  
+        var enteredUsername = usernameInput.value;
+        var enteredPassword = passwordInput.value;
+
+        const card1 = document.querySelector('#special1');
+        const card2 = document.querySelector('#special2');
+
+        if (enteredUsername === "karthikeyan" && enteredPassword === "12345" || enteredUsername=== "vidhyaashree" && enteredPassword==="12345") {
+            
+            card1.classList.remove("hidden");
+            card2.classList.remove("hidden");
+        
+
+            form.classList.add("hidden"); 
+
+           // window.location.href = "https://www.spotify.com/us/404/" ;
+
+        }
+        
+        else {
+          alert("Invalid username or password. Please try again.");
+          
+            passwordInput.value = "";
+        }
+    });
+
+    window.onbeforeunload = function() {
+            card1.classList.add("hidden");
+            card2.classList.add("hidden");
+            
+      };
+      
+
+
+    let display = document.querySelector("#time");
+
+    //generate time
+    function getTime() {
+      let today = new Date();
+      let hour = today.getHours();
+      let min = today.getMinutes();
+      let sec = today.getSeconds();
+    
+      //add 0 to beginning of sec if < 10
+      if (sec < 10) {
+        sec = "0" + sec;
+      }
+     //add 0 to beginning of hour if < 10
+      if (hour < 10) {
+          hour = '0' + hour;
+      }
+     //add 0 to beginning of min if < 10
+      if (min < 10) {
+          min = '0' + min;
+      }
+    
+      return hour + ":" + min + ":" + sec;
+    }
+    
+    //call flicker every 2 seconds
+    setInterval(function() {
+        flicker();
+    }, 5000);
+    
+    // update time
+    window.setInterval(function() {
+      display.textContent = getTime();
+    }, 0);
+    
+    function flicker() {
+        setInterval(function() {
+        display.classList.toggle('flicker');
+    
+        if(display.classList.contains('flicker')) {
+            display.classList.remove('shadow');
+        } else {
+            display.classList.add('shadow');
+        }
+
+    //randomize flicker pattern interval
+    }, 2400)}
+
+
+
+    function clocktapped() {
+    
+    document.querySelector(".clockcontainer").style.color = "yellow";
+    console.log("tapped!!");
+    }
+
+
+    var windowScrolled;
+
+    window.addEventListener("scroll", function windowScroll() {
+        windowScrolled = window.pageYOffset;
+        document.getElementById("ParallaxContent").style.transform ="translate3d(0, " + windowScrolled / 2 + "px, 0)";
+    });
+
+    
+    
+
+    function openabtme(){
+        window.open( "_blank");
+    }
+    function special1() {
+        window.open("https://pranx.com/fake-virus/", "_blank")
+    }
+    function special2() {
+        window.open("https://www.riddlester.co/wp-content/uploads/2019/11/Funny-quotes-that-will-make-you-smile.jpg", "_blank")
+    }
+
+</script>
+
+</html>
